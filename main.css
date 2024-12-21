@@ -1,0 +1,63 @@
+body .container .sections .section0 h2 {
+  position: relative;
+  top: 60%;
+  margin: 0 auto;
+}
+body .container .sections .section1 h1 {
+  top: 20% !important;
+}
+body .container .sections .section1 .gor {
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  top: 35%;
+}
+body .container .sections .section2 h1 {
+  top: 30% !important;
+}
+body .container .sections .section2 p {
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  top: 40%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+body .container .sections .section3 h1 {
+  top: 20% !important;
+}
+body .container .sections .section3 .gor {
+  position: relative;
+  margin: 0 auto;
+  left: 0;
+  top: 35%;
+}
+body .container .sections .section4 h1 {
+  top: 30% !important;
+}
+body .container .sections .section4 p {
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  top: 40%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .pip {
+    width: 70%;
+  }
+}
+@media (max-width: 425px) {
+  .pip {
+    height: 325px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page li {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}/*# sourceMappingURL=main.css.map */

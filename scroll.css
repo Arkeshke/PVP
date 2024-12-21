@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    touch-action: pan-y;
+  }
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial,"Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    touch-action: pan-y;
+    
+  }
+  @media (max-width:768px) {
+    .html,body{
+      overflow: scroll;
+    }
+  }
+  .container, .sections, .section {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    max-width: 100% !important;
+    --bs-gutter-x: 0 !important;
+  }
+  .section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: all .3s ease;
+  }
+  .section:first-child h1 {
+    animation: first-show .3s;
+  }
+  .section0 {
+    background: #409EFF;
+  }
+  .section2 {
+    background: #E6A23C;
+  }
+  .section3 {
+    background: #F56C6C;
+  }
+  .section1{
+    background: #67C23A;
+  }
+  .section4{
+    background: #4b0daf;
+  }
+  .section h1.text-animate {
+    left: 0px;
+    transform: translateX(-100%);
+  }
+  @keyframes first-show {
+    0% {
+      left: 0px;
+      transform: translateX(-100%);
+    }
+    100% {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+
+[data-fs-scroll] {
+    position: relative;
+  }
+  
+  [data-fs-scroll] .page {
+    position: fixed;
+    list-style: none;
+  }
+  
+  [data-fs-scroll] .page.vertical {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+  
+  [data-fs-scroll] .page.horizontal {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  
+  [data-fs-scroll] .page li {
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,.6);
+    border-radius: 50%;
+    margin: 5px 2px;
+    cursor: pointer;
+  }
+  
+  [data-fs-scroll] .page li.active {
+    border-radius: 6px;
+    background: #fff;
+  }
+  
+  [data-fs-scroll] .page.horizontal li {
+    display: inline-block;
+  }
+  
+  [data-fs-scroll] .page.horizontal .active{
+    width: 14px;
+  }
+  
+  [data-fs-scroll] .page.vertical .active {
+    height: 14px;
+  }

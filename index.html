@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ПВВ-Феничев-А.А.</title>
+  <link rel="stylesheet" href="scroll.css">
+  <link rel="stylesheet" href="main.css">
+  
+
+
+
+</head>
+<body>
+  <div class="container" data-fs-scroll>
+    <div class="sections">
+      <div class="section section0">
+        <h1>Психология Визуального Восприятия</h1>
+        <h2>Феничев.А.А</h2>
+      </div>
+      <div class="section section1">
+        <h1>1 видео</h1>
+        <div class="gor">
+          
+          <iframe class="pip"
+          width="720"
+          height="405"
+          src="https://rutube.ru/play/embed/fc7ee921356068af5aa10995128f0a51"
+          frameBorder="0"
+          allow="clipboard-write; autoplay"
+          webkitAllowFullScreen
+          mozallowfullscreen
+          allowFullScreen>
+          </iframe>
+  
+        </div>
+      </div>
+      <div class="section section2">
+        <h1>Что чувствуем?</h1>
+        <p>В первом видео, данной музыкой и композицией, я хотел показать, то горе,
+          которое испытал отец после убийства собственного сына. 
+        </p>
+      </div>
+      <div class="section section3">
+        <h1>2 видео</h1>
+        <div class="gor">
+          
+          <iframe class="pip" width="720" height="405" src="https://rutube.ru/play/embed/27d3c4fb888fb4f12396ebcf4a6d7420/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+
+          </iframe>
+  
+        </div>
+      </div>
+      <div class="section section4">
+        <h1>Что чувствуем?</h1>
+        <p>Во втором видео, данной музыкой и композицией, я хотел показать нарастающий гнев/ненависть к самому себе, который\ую испытал Иван Грозный
+          после убийства сына. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="min.js"></script>
+  <script src="scroll.js"></script>
+
+  <script>
+    $('.container').fsScroll({
+
+      beforeScroll: function(el, index) {
+        el.find('h1').addClass('text-animate');
+      },
+
+      afterScroll: function(el, index) {
+        el.find('h1').removeClass('text-animate');
+      }
+    })
+  </script>
+</body>
+</html>
